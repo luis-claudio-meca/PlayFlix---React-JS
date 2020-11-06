@@ -16,10 +16,12 @@ export default () =>{
       let list = await Tmdb.getHomeList();
       setMovieList(list);
 
-      let originals = list.filter(i=> i.slug === 'originals');
-      let randonChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
-      let chosen = originals[0].items.results[randonChosen]
-      let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
+      let trending = list.filter(i=> i.slug === 'trending');
+      let randonChosen = Math.floor(Math.random() * (trending[0].items.results.length - 1));
+      let chosen = trending[0].items.results[randonChosen]
+
+      
+      let chosenInfo = await Tmdb.getMovieInfo(chosen.id, chosen.media_type === 'tv' ? 'tv' : 'movie');
       setFeaturedData(chosenInfo);
     }
 
@@ -43,6 +45,7 @@ export default () =>{
   }, []);
 
   return(
+  
     <div className="page">
 
       <Header black={blackHeader}/>
@@ -59,7 +62,7 @@ export default () =>{
         }
       </section>
       <footer>
-        Feito em Live (https://www.youtube.com/watch?v=tBweoUiMsDg) para estudo de react, todos os direitos das imagens são da Netflix.
+        Feito para estudo de react.<br/>
         Dados Extraidos de https://www.themoviedb.org/
       </footer>
 
@@ -70,6 +73,7 @@ export default () =>{
       </div>
     }
     </div>
+ 
   )
 }
 

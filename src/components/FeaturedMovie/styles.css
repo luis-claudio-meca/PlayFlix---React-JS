@@ -26,13 +26,24 @@
 }
 
 .featured--info{
+    display: inline-block ;
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
+    width: 30%;
+    
+   
 }
 
 .featured--points{
-    color: #46d369
+    display: inline-block;
+    color: #46d369;
+    width: 30%;
+    
+}
+.featured--year, .featured--seasons{
+    display: inline-block;
+    width: 30%; 
 }
 
 .featured--description{
