@@ -14,7 +14,7 @@ export default () =>{
   useEffect(()=>{
     const loadAll = async () => {
       let list = await Tmdb.getHomeList();
-      setMovieList(list);
+    //  setMovieList(list);
 
       let trending = list.filter(i=> i.slug === 'trending');
       let randonChosen = Math.floor(Math.random() * (trending[0].items.results.length - 1));
@@ -69,7 +69,7 @@ export default () =>{
 
     {movieList.length <= 0 &&
       <div className="loading">
-        <img src="https://cdn.lowgif.com/small/0534e2a412eeb281-the-counterintuitive-tech-behind-netflix-s-worldwide.gif" alt="loading"></img>
+        <img src="https://thumbs.gfycat.com/CleanGiantFlea-size_restricted.gif" alt="loading"></img>
       </div>
     }
     </div>
@@ -79,4 +79,3 @@ export default () =>{
 
 
 
-// https://youtu.be/tBweoUiMsDg?t=8054

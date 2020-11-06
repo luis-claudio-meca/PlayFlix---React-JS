@@ -11,7 +11,7 @@ export default {
         return [
             {
                 slug: 'originals',
-                title : "Originais do Netflix",
+                title : "Sugestões de Séries",
                 items : await basicFecth(`/discover/tv/?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -45,9 +45,9 @@ export default {
                 items : await basicFecth(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
             },            
             {
-                slug: 'documentary',
-                title : "Documentários",
-                items : await basicFecth(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
+                slug: 'drama',
+                title : "Drama",
+                items : await basicFecth(`/discover/movie?with_genres=18&language=pt-BR&api_key=${API_KEY}`)
             },
         ]
      },

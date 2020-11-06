@@ -13,10 +13,10 @@ header{
     transition:  all ease 0.5s;
 }
 header.black{
-    background:#141414;  
+    background: #832796;  
 }
 .header--logo{
-    height: 25px;    
+    height: 65px;    
 }
 
 .header--logo img{
@@ -24,10 +24,10 @@ header.black{
 }
 
 .header--user{
-    height: 35px;
+    height: 65px;
 }
 
 .header--user img {
     height: 100%;
-    border-radius: 3px;
+    border-radius: 15px;
 }

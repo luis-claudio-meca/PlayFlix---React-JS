@@ -5,10 +5,10 @@ export default ({black})=>{
     return(
         <header className={black ?"black" : ''}>
             <div className="header--logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"/>
+                <img src="https://play-lh.googleusercontent.com/m8VKrn8dhqEWrQOmyYaAnij9zww1NlkdRkwL_xZDKpEPLNajyRBgOEQK732vAOaHQw"/>
             </div>
             <div className="header--user">
-                <img src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"/>
+                <img src="https://image.freepik.com/vetores-gratis/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg"/>
             </div>
         </header>
     )

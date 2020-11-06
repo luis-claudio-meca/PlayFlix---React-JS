@@ -12,7 +12,7 @@
 }
 
 .movieRow--list {
-    transition : all ease 0.2s;
+    transition : all ease 0.1s; 
 }
 
 .movieRow--item{
@@ -37,7 +37,7 @@
     position:absolute;   
     width: 40px;
     height: 225px;
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(119, 46, 112, 0.6);
     z-index: 99;
     display: flex;
     align-items: center;

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #111;
+    background-color:#832796;
     color :#fff;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -31,4 +31,7 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.loading img{
+    width: 300px;
 }
