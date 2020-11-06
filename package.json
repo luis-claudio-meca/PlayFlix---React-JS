@@ -1,5 +1,5 @@
 {
-  "name": "netflix-clone-ui",
+  "name": "Playflix-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "Playflix-react-app"
   },
   "browserslist": {
     "production": [

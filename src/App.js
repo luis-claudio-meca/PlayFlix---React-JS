@@ -14,7 +14,7 @@ export default () =>{
   useEffect(()=>{
     const loadAll = async () => {
       let list = await Tmdb.getHomeList();
-    //  setMovieList(list);
+      setMovieList(list);
 
       let trending = list.filter(i=> i.slug === 'trending');
       let randonChosen = Math.floor(Math.random() * (trending[0].items.results.length - 1));
